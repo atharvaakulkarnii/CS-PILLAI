@@ -1,0 +1,1741 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CS pillai</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="css/homepage.css" />
+    <link rel="stylesheet" href="css/testimonial.css" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- ******** Desktop Navigation ******** -->
+
+    <div class="sidebar">
+      <nav>
+        <a class="link" href="#">
+          <img class="linkimg" src="assests/Images/navbar/home.png" alt="" />
+          <p class="linkp">Home</p>
+        </a>
+        <a class="link" href="#schemes_gooty">
+          <img class="linkimg" src="assests/Images/navbar/gooty.png" alt="" />
+          <p class="linkp">Schemes & Gootycart</p>
+        </a>
+        <a class="link" href="#showcase">
+          <img
+            class="linkimg"
+            src="assests/Images/navbar/showcase.png"
+            alt=""
+          />
+          <p class="linkp">Showcase</p>
+        </a>
+        <a class="link" href="#startup">
+          <img class="linkimg" src="assests/Images/navbar/own.png" alt="" />
+          <p class="linkp">Own The Startups</p>
+        </a>
+        <a class="link" href="#areas">
+          <img class="linkimg" src="assests/Images/navbar/areas.png" alt="" />
+          <p class="linkp">Areas</p>
+        </a>
+        <a class="link" href="#testim">
+          <img
+            class="linkimg"
+            src="assests/Images/navbar/testimonial.png"
+            alt=""
+          />
+          <p class="linkp">Testimonial</p>
+        </a>
+        <a class="link" href="#about_us">
+          <img class="linkimg" src="assests/Images/navbar/about.png" alt="" />
+          <p class="linkp">About Us</p>
+        </a>
+        <a class="link" href="#clients">
+          <img class="linkimg" src="assests/Images/navbar/clients.png" alt="" />
+          <p class="linkp">Clients</p>
+        </a>
+        <a class="link" href="#contact_us">
+          <img class="linkimg" src="assests/Images/navbar/contact.png" alt="" />
+          <p class="linkp">Contact Us</p>
+        </a>
+        <a class="link" href="blog.html">
+          <img class="linkimg" src="assests/Images/navbar/blog.png" alt="" />
+          <p class="linkp">Blog</p>
+        </a>
+      </nav>
+    </div>
+    <!-- ******** Desktop Navigation End ******** -->
+
+    <!-- ******** Mobile Navigation ******** -->
+
+    <div id="myNav" class="overlaynav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </a>
+
+      <div class="nav_cont">
+        <div class="nav_link">
+          <img src="/assests/Images/navbar/home.png" alt="" /><a
+            onclick="closeNav()"
+            href="#home"
+            >HOME</a
+          >
+        </div>
+
+        <div class="nav_link">
+          <img src="/assests/Images/navbar/gooty.png" alt="" /><a
+            onclick="closeNav()"
+            href="#schemes_gooty"
+            >SCHEMES AND GOOTYCART</a
+          >
+        </div>
+
+        <div class="nav_link">
+          <img src="/assests/Images/navbar/showcase.png" alt="" /><a
+            onclick="closeNav()"
+            href="#showcase"
+            >SHOWCASE</a
+          >
+        </div>
+
+        <div class="nav_link">
+          <img src="/assests/Images/navbar/own.png" alt="" /><a
+            href="#startup"
+            onclick="closeNav()"
+            >OWN THE STARTUP</a
+          >
+        </div>
+
+        <div class="nav_link">
+          <img src="/assests/Images/navbar/areas.png" alt="" /><a
+            onclick="closeNav()"
+            href="#areas"
+            >AREAS</a
+          >
+        </div>
+
+        <div class="nav_link">
+          <img src="/assests/Images/navbar/testimonial.png" alt="" /><a
+            onclick="closeNav()"
+            href="#testim"
+            >TESTIMONIALS</a
+          >
+        </div>
+
+        <div class="nav_link">
+          <img src="/assests/Images/navbar/about.png" alt="" /><a
+            onclick="closeNav()"
+            href="#about_us"
+            >ABOUT US</a
+          >
+        </div>
+
+        <div class="nav_link">
+          <img src="/assests/Images/navbar/clients.png" alt="" /><a
+            onclick="closeNav()"
+            href="#clients"
+            >CLIENTS</a
+          >
+        </div>
+
+        <div class="nav_link">
+          <img src="/assests/Images/navbar/contact.png" alt="" /><a
+            onclick="closeNav()"
+            href="#contact_us"
+            >CONTACT US</a
+          >
+        </div>
+        <div class="nav_link">
+          <img src="/assests/Images/navbar/blog.png" alt="" /><a
+            onclick="closeNav()"
+            href="blog.html"
+            >BLOG</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- ******** Mobile Navigation End ******** -->
+
+    <!-- ******** Main Section ******** -->
+    <div class="outline">
+      <section class="main section-padding mar-bottom-3" id="main">
+        <!-- ******** Desktop Header ******** -->
+
+        <div class="header_div">
+          <img
+            class="logo"
+            src="/assests/Images/logo/navlogo.png"
+            alt="company logo"
+          />
+
+          <div class="header_right">
+            <div class="header_contact">
+              <p class="section_desc_contact txt_white mar-bottom-2">
+                1800 212 4503 | +91 8850762306 | contact@pillais.group
+              </p>
+              <div class="social_media">
+                <img
+                  class="social_logo"
+                  src="/assests/Images/logo/facebook.png"
+                  alt=""
+                />
+                <img
+                  class="social_logo"
+                  src="/assests/Images/logo/twitter.png"
+                  alt=""
+                />
+                <img
+                  class="social_logo"
+                  src="/assests/Images/logo/insta.png"
+                  alt=""
+                />
+                <img
+                  class="social_logo"
+                  src="/assests/Images/logo/linkedin.png"
+                  alt=""
+                />
+                <img
+                  class="social_logo"
+                  src="/assests/Images/logo/youtube.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <img
+              class="logo_2"
+              src="/assests/Images/logo/pillai.png"
+              alt="company logo"
+            />
+          </div>
+        </div>
+        <!-- ******** Desktop Header End******** -->
+        <!-- ******** Mobile Navigation Header******** -->
+
+        <div class="mobnavtop">
+          <img
+            class="logo_2"
+            src="/assests/Images/logo/pillai.png"
+            alt="company logo"
+          />
+          <div class="header_contact_mob">
+            <p class="section_desc_contact txt_white">
+              1800 212 4503 | +91 8850762306 | contact@pillais.group
+            </p>
+            <div class="social_media">
+              <img
+                class="social_logo"
+                src="/assests/Images/logo/facebook.png"
+                alt=""
+              />
+              <img
+                class="social_logo"
+                src="/assests/Images/logo/insta.png"
+                alt=""
+              />
+              <img
+                class="social_logo"
+                src="/assests/Images/logo/linkedin.png"
+                alt=""
+              />
+              <img
+                class="social_logo"
+                src="/assests/Images/logo/twitter.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="mobNav">
+          <div class="d2d1">
+            <img src="/assests/Images/logo/navlogo.png" loading="lazy" alt="" />
+          </div>
+
+          <div>
+            <span onclick="openNav()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#fff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <!-- ******** Mobile Navigation Header End  ******** -->
+
+        <div class="intro">
+          <div class="heading_1">
+            <p class="section_header">WELCOME TO csPILLAI!</p>
+          </div>
+          <div class="heading_2">
+            <p>THE VENTURE BUILDER! YOUR STARTUP FACTORY!</p>
+          </div>
+          <div class="heading_3">
+            <p>
+              We aim to walk <span>beginning investors</span> through the
+              startup-investing process step-by-step, as well as encourage them
+              <span>to beget brand-new venture(s)</span>(small tech startups and
+              small-businesses)
+              <span
+                >for a buyout, all within csPILLAI, quickly and
+                inexpensively.</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="exit">
+          <p>INVEST-to-EXIT</p>
+          <button class="inv_to_ext accent_button">GET STARTED</button>
+        </div>
+
+        <div class="footer_1">
+          <div class="bottom_txt">
+            <p>Investors! Consider csPILLAI your second skin.</p>
+          </div>
+          <div class="bottom_txt_2">
+            <p>
+              We encourage you to put down the pre-seed and co-own ventures to
+              beget 2x to 10x exit gains.<br />
+              The inexpensive way to build and own a venture for a trade sale in
+              540 days is to explore csPILLAI invest②exit schemes
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ******** Main Section End ******** -->
+
+      <div
+        class="second_skin section_padding"
+        style="padding-bottom: 0"
+        id="start"
+      >
+        <h1>INVESTORS! CONSIDER CSPILLAI YOUR SECOND SKIN.</h1>
+
+        <div class="carousel_cont" id="car1">
+          <ul class="carousel carousel-slider" \>
+            <li class="carousel-item">
+              <div class="text_cont">
+                <p>
+                  We encourage you to put down the pre-seed and co-own ventures
+                  to beget 2x to 10x exit gains.
+                </p>
+              </div>
+            </li>
+            <li class="carousel-item">
+              <div class="text_cont">
+                <p>
+                  The inexpensive way to build and co-own a venture to beget a
+                  trade for a trade sale exit in 540 days is to explore
+
+                  <u>invest2exit</u> schemes.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="purpose section-padding mar-bottom-3" id="purpose">
+        <div class="middlediv">
+          <p class="section_header txt_green txt_center mar-bottom-3">
+            Purpose
+          </p>
+          <p class="section_desc txt_center">
+            Our purpose is multifaceted, as we want to run an "innovation-driven
+            & carbon neutral venture(s) selling" business,generate and
+            <b>increase profits</b> for the stakeholders/investors, provide
+            <b>remote employment opportunities</b> to people and
+            <b>generate work required for human wellbeing.</b> while also
+            engaging in an open and free competition without deception and fraud
+            by advocating no short-term approach to growth and long-term
+            sustainable returns.
+          </p>
+        </div>
+        <button class="accent_button">LEARN ABOUT csPILLAI</button>
+      </section>
+      <section class="schemes_gooty mar-bottom-3" id="schemes_gooty">
+        <p class="section_header txt_green mar-bottom-1 extra_padding">
+          SCHEMES & GOOTYCART
+        </p>
+        <p class="section_desc extra_padding flexible">
+          Introducing three invest②exit type venture building schemes, alongside
+          Gootycart (an e-Marketplace), that contain many possible offerings and
+          deliveries. It is your opportunity to engage, fund, and own the
+          ventures, to gain wealth multi-fold and fulfill your passion.
+        </p>
+        <div class="container_small">
+          <ul class="carousel carousel-slider">
+            <li class="carousel-item">
+              <div class="gooty_card_mob">
+                <div id="own_startup-ci" style="text-align: center">
+                  <img
+                    src="assests/Images/gootycart/gootyCI.png"
+                    alt="Gooty-CI"
+                    loading="lazy"
+                    style="height: 150px; margin: 1rem 0"
+                  />
+                </div>
+
+                <div class="gooty_desc_p">
+                  <p>
+                    Our venture buyers are Corporate Venture Capital (CVC)
+                    firms, and other big companies, chasing after new
+                    opportunities to achieve strategic and financial goals. You
+                    put in the pre-seed and get the ventures built based on
+                    their Corporate Innovations(CI) and exit selling them for a
+                    significant financial gain.
+                  </p>
+                </div>
+              </div>
+              <button>Get started</button>
+            </li>
+            <li class="carousel-item">
+              <div class="gooty_card_mob">
+                <div id="own_startup-ci" style="text-align: center">
+                  <img
+                    src="assests/Images/gootycart/gootySS.png"
+                    alt="Gooty-CI"
+                    loading="lazy"
+                    style="height: 150px; margin: 1rem 0"
+                  />
+                </div>
+
+                <div class="gooty_desc_p">
+                  <p>
+                    Our venture buyers are VC firms and angel investors
+                    interested in Scalable Startups (SS) and premium exits. You
+                    put in the pre-seed and get the ventures developed for them
+                    and gain a gratifying financial increase via the trade-sale.
+                  </p>
+                </div>
+              </div>
+              <button>Get started</button>
+            </li>
+            <li class="carousel-item">
+              <div class="gooty_card_mob">
+                <div id="own_startup-ci" style="text-align: center">
+                  <img
+                    src="assests/Images/gootycart/gootySB.png"
+                    alt="Gooty-CI"
+                    loading="lazy"
+                    style="height: 150px; margin: 1rem 0"
+                  />
+                </div>
+
+                <div class="gooty_desc_p">
+                  <p>
+                    Our venture buyers are new gootycart business owners and
+                    aspiring individuals longing to own small cash cow ventures.
+                    By investing a small amount, you can build Small Businesses
+                    (SB), mainly digital or service enterprises, and achieve
+                    decent trade sale exit gains within a short timeframe.
+                  </p>
+                </div>
+              </div>
+              <button>Get started</button>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="gooty_parent temp_pad"
+          style="padding-top: 0; padding-bottom: 0"
+        >
+          <div class="gooty_card_cont_small">
+            <div class="gooty_card">
+              <img
+                class="mar-bottom-1"
+                src="/assests/Images/gootycart/gootyCI.png"
+                alt=""
+              />
+              <div class="gooty_desc_p">
+                <p>
+                  Our venture buyers are Corporate Venture Capital (CVC) firms,
+                  and other big companies, chasing after new opportunities to
+                  achieve strategic and financial goals. You put in the pre-seed
+                  and get the ventures built based on their Corporate
+                  Innovations(CI) and exit selling them for a significant
+                  financial gain.
+                </p>
+              </div>
+            </div>
+            <button>Get started</button>
+          </div>
+          <div class="gooty_card_cont_small">
+            <div class="gooty_card">
+              <img
+                class="mar-bottom-1"
+                src="/assests/Images/gootycart/gootySS.png"
+                alt=""
+              />
+              <div class="gooty_desc_p">
+                <p>
+                  Our venture buyers are VC firms and angel investors interested
+                  in Scalable Startups (SS) and premium exits. You put in the
+                  pre-seed and get the ventures developed for them and gain a
+                  gratifying financial increase via the trade-sale.
+                </p>
+              </div>
+            </div>
+            <button>Get started</button>
+          </div>
+
+          <div class="gooty_card_cont_small">
+            <div class="gooty_card">
+              <img
+                class="mar-bottom-1"
+                src="/assests/Images/gootycart/gootySB.png"
+                alt=""
+              />
+              <div class="gooty_desc_p">
+                <p>
+                  Our venture buyers are new gootycart business owners and
+                  aspiring individuals longing to own small cash cow ventures.
+                  By investing a small amount, you can build Small Businesses
+                  (SB), mainly digital or service enterprises, and achieve
+                  decent trade sale exit gains within a short timeframe.
+                </p>
+              </div>
+            </div>
+            <button>Get started</button>
+          </div>
+        </div>
+        <div class="temp_pad">
+          <div class="gootycart_card">
+            <img src="/assests/Images/gootycart/gootycart.png" alt="" />
+            <p class="section_desc txt_center">
+              Gootycart is our new Business Model Innovation. It works for
+              newbie pre-seed investors-YOU! It is an e-Marketplace, specially
+              created to enhance and glorify your startups/businesses very
+              creation. Gootycart is the buzz creator! Buzz is created as it
+              starts selling your startup goods online; with this buzz, your
+              startup valuation goes high. This very act of gootycart creates
+              natural traction and enough buzz and attracts strategic or
+              financial BUYERs; it plays a significant role in achieving
+              sure-fire premium exits in 540 days. Gootycart achieves this
+              objective by recruiting women entrepreneurs/business owners to
+              merchandise your startup products. Also, to the vendors( women
+              entrepreneurs), it's more than just an e-Marketplace! They become
+              vendors and sell your innovative (digital or physical)
+              <span id="dots">...</span>
+
+              <span id="more">
+                goods without any entry fee. csPILLAI provides free training,
+                business development, marketing, drop-shipping, product return,
+                customer-care, and assembly support to all those women
+                entrepreneurs/business owners on gootycart. Gootycart managers
+                also look after their online stores and conduct their businesses
+                if required for a small fee. This is to maximize their time
+                efficiency and focus only on your startup goods sales and
+                marketing.<br />
+
+                csPILLAI operates gootycart like a social enterprise/brand; we
+                spend all gootycart profits for creating optimal conditions or
+                environments to carve a more natural growth path for Women
+                entrepreneurs- Rural[We-R] and rural development.</span
+              >
+            </p>
+            <button onclick="myFunction()" id="myBtn" class="accent_button">
+              Read more
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="showcase section-padding mar-bottom-3" id="showcase">
+        <div class="show_desc">
+          <div class="showcase_big">
+            <p class="section_header txt_green mar-bottom-1">SHOWCASE</p>
+            <p class="section_desc">
+              These are just a few of the many ventures we built alongside
+              respective investors. The co-owners, pre-seed investors [PIs],
+              attached themselves to these startups from the beginning and
+              consistently enjoyed the value and impact of their creation. These
+              investors saw ideas that had huge profit potential, took the risk,
+              and put down the capital. The results were significant exit gains
+              in 540 days! Thanks to the buzz created by the 'Industrialized
+              Closed-loop venture building ecosystem' (through email marketing,
+              press releases, news coverages, blog posts, trade shows, social
+              media posts, introductions, online ads, investment guide
+              distribution, and Gootycart), and the investors' network strength.
+            </p>
+          </div>
+
+          <div class="show_img_pc">
+            <img src="/assests/Images/showcase/stylehaler.png" alt="" />
+            <button class="accent_button">Visit site</button>
+          </div>
+          <div class="show_container">
+            <ul class="carousel carousel-slider">
+              <li class="carousel-item">
+                <div class="show_img_mob">
+                  <img src="/assests/Images/showcase/stylehaler.png" alt="" />
+                  <button class="accent_button">Visit site</button>
+                </div>
+              </li>
+              <li class="carousel-item">
+                <div class="show_img_mob">
+                  <img src="/assests/Images/showcase/stylehaler.png" alt="" />
+                  <button class="accent_button">Visit site</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="schemes_gooty gooty_padding" id="startup">
+        <div class="section_header">
+          <p class="section_header txt_green mar-bottom-1">OWN THE STARTUPS</p>
+        </div>
+        <div class="gooty_parent">
+          <div class="gooty_card_cont">
+            <div class="gooty_card">
+              <img
+                class="mar-bottom-1"
+                src="/assests/Images/gootycart/gootyCI.png"
+                alt=""
+              />
+              <div class="gooty_desc_p">
+                <p>⭕ Opportunity: Pre-seed Round</p>
+
+                <p>⭕ You Offer: &lt;$55K</p>
+
+                <p>
+                  ⭕ We Offer: <br />
+                  50% or 68% equity
+                </p>
+
+                <p>
+                  ⭕ Early Exit: <br />
+                  &lt;540 days
+                </p>
+
+                <p>
+                  ⭕ ROI on Exit: <br />
+                  2x to 10x
+                </p>
+
+                <p style="white-space: nowrap">
+                  ⭕ Startup: <br />
+                  Corporate-Innovations
+                </p>
+
+                <p style="white-space: nowrap">
+                  ⭕ IP rights/secrets/exclusivity
+                </p>
+
+                <p style="white-space: nowrap">⭕ Incorporation/web presence</p>
+
+                <p>⭕ Proto/Business Model Innovation</p>
+
+                <p>⭕ Client Portal</p>
+
+                <p>⭕ Venture buzz creation</p>
+
+                <p>⭕ 100% buyer buy-in</p>
+              </div>
+            </div>
+            <button>Get started</button>
+          </div>
+          <div class="gooty_card_cont">
+            <div class="gooty_card">
+              <img
+                class="mar-bottom-1"
+                src="/assests/Images/gootycart/gootySS.png"
+                alt=""
+              />
+              <div class="gooty_desc_p">
+                <p>⭕ Opportunity: Pre-seed Round</p>
+
+                <p>
+                  ⭕ You Offer: <br />
+                  &lt;$45K
+                </p>
+
+                <p>
+                  ⭕ We Offer: <br />
+                  50% or 68% equity
+                </p>
+
+                <p>
+                  ⭕ Early Exit: <br />
+                  &lt;540 days
+                </p>
+
+                <p>
+                  ⭕ ROI on Exit: <br />
+                  2x to 10x
+                </p>
+
+                <p style="white-space: nowrap">
+                  ⭕ Startup: <br />
+                  Scalable-Startups
+                </p>
+
+                <p style="white-space: nowrap">
+                  ⭕ IP rights/secrets/exclusivity
+                </p>
+
+                <p style="white-space: nowrap">⭕ Incorporation/web presence</p>
+
+                <p>⭕ Proto/Business Model Innovation</p>
+
+                <p>⭕ Client portal</p>
+
+                <p>⭕ Venture buzz creation</p>
+
+                <p>⭕ 100% buyer buy-in</p>
+              </div>
+            </div>
+            <button>Get started</button>
+          </div>
+
+          <div class="gooty_card_cont">
+            <div class="gooty_card">
+              <img
+                class="mar-bottom-1"
+                src="/assests/Images/gootycart/gootySB.png"
+                alt=""
+              />
+              <div class="gooty_desc_p">
+                <p>⭕ Opportunity: Pre-seed Round</p>
+
+                <p>
+                  ⭕ You Offer: <br />
+                  &lt;$35K
+                </p>
+
+                <p>
+                  ⭕ We Offer: <br />
+                  50% or 68% equity
+                </p>
+
+                <p>
+                  ⭕ Early Exit: <br />
+                  &lt;540 days
+                </p>
+
+                <p>
+                  ⭕ ROI on Exit: <br />
+                  2x to 10x
+                </p>
+
+                <p style="white-space: nowrap">⭕ Startup: Small-Businesses</p>
+
+                <p style="white-space: nowrap">
+                  ⭕ IP rights/secrets/exclusivity
+                </p>
+
+                <p style="white-space: nowrap">⭕ Incorporation/web presence</p>
+
+                <p>⭕ Proto/Business Model Innovation</p>
+
+                <p>⭕ Client portal</p>
+
+                <p>⭕ Venture buzz creation</p>
+
+                <p>⭕ 100% buyer buy-in</p>
+              </div>
+            </div>
+            <button>Get started</button>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <ul class="carousel carousel-slider">
+          <li class="carousel-item">
+            <div class="gooty_card_mob">
+              <div id="own_startup-ci" style="text-align: center">
+                <img
+                  src="assests/Images/gootycart/gootyCI.png"
+                  alt="Gooty-CI"
+                  loading="lazy"
+                  style="height: 150px; margin: 1rem 0"
+                />
+              </div>
+
+              <div class="gooty_desc_p">
+                <p>⭕ Opportunity: Pre-seed Round</p>
+
+                <p>⭕ You Offer: &lt;$55K</p>
+
+                <p>
+                  ⭕ We Offer: <br />
+                  50% or 68% equity
+                </p>
+
+                <p>
+                  ⭕ Early Exit: <br />
+                  &lt;540 days
+                </p>
+
+                <p>
+                  ⭕ ROI on Exit: <br />
+                  2x to 10x
+                </p>
+
+                <p style="white-space: nowrap">
+                  ⭕ Startup: <br />
+                  Corporate-Innovations
+                </p>
+
+                <p style="white-space: nowrap">
+                  ⭕ IP rights/secrets/exclusivity
+                </p>
+
+                <p style="white-space: nowrap">⭕ Incorporation/web presence</p>
+
+                <p>⭕ Proto/Business Model Innovation</p>
+
+                <p>⭕ Client Portal</p>
+
+                <p>⭕ Venture buzz creation</p>
+
+                <p>⭕ 100% buyer buy-in</p>
+              </div>
+            </div>
+            <button>Get started</button>
+          </li>
+          <li class="carousel-item">
+            <div class="gooty_card_mob">
+              <div id="own_startup-ci" style="text-align: center">
+                <img
+                  src="assests/Images/gootycart/gootySS.png"
+                  alt="Gooty-CI"
+                  loading="lazy"
+                  style="height: 150px; margin: 1rem 0"
+                />
+              </div>
+
+              <div class="gooty_desc_p">
+                <p>⭕ Opportunity: Pre-seed Round</p>
+
+                <p>
+                  ⭕ You Offer: <br />
+                  &lt;$45K
+                </p>
+
+                <p>
+                  ⭕ We Offer: <br />
+                  50% or 68% equity
+                </p>
+
+                <p>
+                  ⭕ Early Exit: <br />
+                  &lt;540 days
+                </p>
+
+                <p>
+                  ⭕ ROI on Exit: <br />
+                  2x to 10x
+                </p>
+
+                <p style="white-space: nowrap">
+                  ⭕ Startup: <br />
+                  Scalable-Startups
+                </p>
+
+                <p style="white-space: nowrap">
+                  ⭕ IP rights/secrets/exclusivity
+                </p>
+
+                <p style="white-space: nowrap">⭕ Incorporation/web presence</p>
+
+                <p>⭕ Proto/Business Model Innovation</p>
+
+                <p>⭕ Client portal</p>
+
+                <p>⭕ Venture buzz creation</p>
+
+                <p>⭕ 100% buyer buy-in</p>
+              </div>
+            </div>
+            <button>Get started</button>
+          </li>
+          <li class="carousel-item">
+            <div class="gooty_card_mob">
+              <div id="own_startup-ci" style="text-align: center">
+                <img
+                  src="assests/Images/gootycart/gootySB.png"
+                  alt="Gooty-CI"
+                  loading="lazy"
+                  style="height: 150px; margin: 1rem 0"
+                />
+              </div>
+
+              <div class="gooty_desc_p">
+                <p>⭕ Opportunity: Pre-seed Round</p>
+
+                <p>
+                  ⭕ You Offer: <br />
+                  &lt;$35K
+                </p>
+
+                <p>
+                  ⭕ We Offer: <br />
+                  50% or 68% equity
+                </p>
+
+                <p>
+                  ⭕ Early Exit: <br />
+                  &lt;540 days
+                </p>
+
+                <p>
+                  ⭕ ROI on Exit: <br />
+                  2x to 10x
+                </p>
+
+                <p style="white-space: nowrap">⭕ Startup: Small-Businesses</p>
+
+                <p style="white-space: nowrap">
+                  ⭕ IP rights/secrets/exclusivity
+                </p>
+
+                <p style="white-space: nowrap">⭕ Incorporation/web presence</p>
+
+                <p>⭕ Proto/Business Model Innovation</p>
+
+                <p>⭕ Client portal</p>
+
+                <p>⭕ Venture buzz creation</p>
+
+                <p>⭕ 100% buyer buy-in</p>
+              </div>
+            </div>
+            <button>Get started</button>
+          </li>
+        </ul>
+      </div>
+      <section class="areas section-padding mar-top-2 mar-bottom-3" id="areas">
+        <div class="parent_column">
+          <div class="row1 mar-bottom-1">
+            <div class="group_col">
+              <div class="area_parent">
+                <p class="section_header txt_green">AREAS</p>
+                <p class="section_desc">
+                  We utilize our skills and turn our passions into building
+                  innovation-driven tech startups and businesses alongside
+                  investors; the eighteen venture-building areas are:
+                </p>
+              </div>
+            </div>
+
+            <div class="group_col">
+              <div class="area_cards">
+                <img src="/assests/Images/areas/agricultural.png" alt="" />
+                <p class="section_desc_areas">Agricultural<br />Technologies</p>
+              </div>
+              <div class="area_cards">
+                <img src="/assests/Images/areas/cleanroom.png" alt="" />
+                <p class="section_desc_areas">
+                  Cleanroom,<br />Unified<br />Technologies
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row2 mar-bottom-1">
+            <div class="group_col">
+              <div class="area_cards">
+                <img src="/assests/Images/areas/electronics.png" alt="" />
+                <p class="section_desc_areas">Electronics</p>
+              </div>
+              <div class="area_cards">
+                <img src="/assests/Images/areas/energy.png" alt="" />
+                <p class="section_desc_areas">Energy<br />Technologies</p>
+              </div>
+            </div>
+
+            <div class="group_col">
+              <div class="area_cards">
+                <img src="/assests/Images/areas/envtech.png" alt="" />
+                <p class="section_desc_areas">
+                  Environmental<br />Technologies
+                </p>
+              </div>
+              <div class="area_cards">
+                <img src="/assests/Images/areas/emerging.png" alt="" />
+                <p class="section_desc_areas">
+                  Emerging<br />New<br />Technologies
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row2 mar-bottom-1">
+            <div class="group_col">
+              <div class="area_cards">
+                <img src="/assests/Images/areas/equipment.png" alt="" />
+                <p class="section_desc_areas">Equipment</p>
+              </div>
+              <div class="area_cards">
+                <img src="/assests/Images/areas/education.png" alt="" />
+                <p class="section_desc_areas">Educational<br />Technologies</p>
+              </div>
+            </div>
+
+            <div class="group_col">
+              <div class="area_cards">
+                <img src="/assests/Images/areas/fashion.png" alt="" />
+                <p class="section_desc_areas">Fashion<br />Technologies</p>
+              </div>
+              <div class="area_cards">
+                <img src="/assests/Images/areas/home.png" alt="" />
+                <p class="section_desc_areas">
+                  Home<br />Automation<br />Technologies
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row2 mar-bottom-1">
+            <div class="group_col">
+              <div class="area_cards">
+                <img src="/assests/Images/areas/information.png" alt="" />
+                <p class="section_desc_areas">
+                  Information &<br />Communication<br />Technologies
+                </p>
+              </div>
+              <div class="area_cards">
+                <img src="/assests/Images/areas/med.png" alt="" />
+                <p class="section_desc_areas">
+                  Medical Devices<br />& Assistive<br />Technologies
+                </p>
+              </div>
+            </div>
+
+            <div class="group_col">
+              <div class="area_cards">
+                <img src="/assests/Images/areas/militech.png" alt="" />
+                <p class="section_desc_areas">Military<br />Technologies</p>
+              </div>
+              <div class="area_cards">
+                <img src="/assests/Images/areas/machinery.png" alt="" />
+                <p class="section_desc_areas">Machinery</p>
+              </div>
+            </div>
+          </div>
+          <div class="row2 mar-bottom-1">
+            <div class="group_col">
+              <div class="area_cards">
+                <img src="/assests/Images/areas/rail.png" alt="" />
+                <p class="section_desc_areas">Rail<br />Technologies</p>
+              </div>
+              <div class="area_cards">
+                <img src="/assests/Images/areas/radio.png" alt="" />
+                <p class="section_desc_areas">Radio<br />Technologies</p>
+              </div>
+            </div>
+
+            <div class="group_col">
+              <div class="area_cards">
+                <img src="/assests/Images/areas/telecommunication.png" alt="" />
+                <p style="font-size: 0.9rem">Telecommunications</p>
+              </div>
+              <div class="area_cards">
+                <img src="/assests/Images/areas/waste.png" alt="" />
+                <p class="section_desc_areas">Waste Treatment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testim" class="testim mar-bottom-3">
+        <!--         <div class="testim-cover"> -->
+
+        <h1 class="section_header txt_white txt_center">TESTIMONIALS</h1>
+
+        <div class="wrap">
+          <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+
+          <span id="left-arrow" class="arrow left fa fa-chevron-left"></span>
+
+          <ul id="testim-dots" class="dots">
+            <li class="dot active"></li>
+
+            <li class="dot"></li>
+
+            <li class="dot"></li>
+
+            <li class="dot"></li>
+          </ul>
+
+          <div id="testim-content" class="cont">
+            <div class="active">
+              <div class="img">
+                <img
+                  src="assests/Images/testimonial/test1.png"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
+              <div class="info_test">
+                <p class="section_desc txt_white mar-bottom-1">
+                  “After investing and co-owning one of their IoT startups
+                  inexpensively, I was rewarded with a successful early exit.
+                  Happy with the results, I organized this again and have
+                  already ordered my second startup!”
+                </p>
+
+                <h2 class="user_name">- Saleem</h2>
+              </div>
+            </div>
+
+            <div>
+              <div class="img">
+                <img
+                  src="assests/Images/testimonial/test2.png"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
+              <div class="info_test">
+                <p class="section_desc txt_white mar-bottom-1">
+                  “I love startup investing, and csPillai made it very
+                  interesting; the three invest2exit schemes and their famous
+                  ‘e-f-o route’ made co-owning ventures simple. I put down the
+                  capital for the exchange of equity, journeyed along, enjoyed,
+                  and had a profitable early exit, so yes, I highly recommend
+                  them!”
+                </p>
+
+                <h2 class="user_name">- Govardhanrao</h2>
+              </div>
+            </div>
+
+            <div>
+              <div class="img">
+                <img
+                  loading="lazy"
+                  src="assests/Images/testimonial/test3.png"
+                  alt=""
+                />
+              </div>
+              <div class="info_test">
+                <p class="section_desc txt_white mar-bottom-1">
+                  “csPILLAI is a seasoned VB! I highly recommend them.”
+                </p>
+
+                <h2 class="user_name">- Ajay</h2>
+              </div>
+            </div>
+
+            <div>
+              <div class="img">
+                <img
+                  src="assets/testimonials/avatar.png"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
+              <div class="info_test">
+                <p class="section_desc txt_white mar-bottom-1">
+                  “csPillai is building a 5G telecom startup for us to own and
+                  exit. I am anxiously waiting for the buzz creation and am
+                  super excited to taste my new business model innovation
+                  fruits!”
+                </p>
+
+                <h2 class="user_name">- Shivashankar</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about_us section-padding mar-bottom-3" id="about_us">
+        <p class="section_header txt_center txt_green mar-bottom-1">ABOUT US</p>
+        <p class="section_header_small txt_center txt_green mar-bottom-1">
+          HISTORY
+        </p>
+        <div class="section_desc">
+          <p>
+            FIFTY-NINE-YEAR-OLD STORY -- A vision for earning and doing 'good'
+            at the same time!
+          </p>
+        </div>
+        <div class="timeline">
+          <div class="row1 y1960">
+            <p class="section_desc desc1">
+              <span class="year">1960</span>
+              Our vision to help build viable business lines accommodating both
+              carbon neutrality and human wellbeing was envisaged in 1959 by the
+              co-founder/caretaker’s father, CS Pillai, then aged 19. During
+              this time, in CS Pillai's neighborhood, respiratory infections
+              caused by indoor smoke pollution from wood stoves were on the
+              rise. His first invention, spurred by enthusiasm, was primarily to
+              promote the community's quality of life. Involuntarily, it
+              resulted in an innovation and technology transfer. He innovated
+              and bartered the IP-rights with a local businessman in exchange
+              for the much-needed sheet metal tools required for the production
+              of the first pilot lot. These stoves, a low-cost innovation,
+              reduced indoor smoke pollution considerably due to their high
+              thermal efficiency. He did not stop there; he went on to produce
+              liquid wood gas through pyrolysis by incinerating agricultural
+              waste using solar concentrators. It further mitigated indoor smoke
+              pollution significantly. He also developed a fully mechanical and
+              wholly gravity-aided dead weight tracking mechanism for solar
+              concentrators required for the production of liquid wood gas.
+            </p>
+            <img src="/assests/Images/history/bulb.png" alt="" />
+          </div>
+          <div class="row2 y1980">
+            <img src="/assests/Images/history/brain.png" alt="" />
+            <p class="section_desc desc1">
+              <span class="year">1980</span>
+              He loved locomotives and hence served the Indian Railways
+              passionately. Before his untimely demise in 1996, he innovated
+              over 30 technologies in his free time. His inventor logbook
+              presented various techniques related to sheet metal dies, wood
+              bending fixtures, food vending mechanisms, motor winding tooling,
+              barbed-wire fence auto laying, underwater welding jigs, Stirling
+              hot air engines, and more. His last, and unfinished, innovation
+              was a low-cost torque converter for mini shunting diesel loco
+              engines used in sugar mills. At the time of his death, he was a
+              passenger train loco pilot/driver; he always dreamt of starting an
+              'innovation-driven venture(s) building company' after his
+              retirement in 2000.
+            </p>
+          </div>
+          <div class="row1 y2018">
+            <p class="section_desc desc1">
+              <span class="year">2018</span>
+              The visionary co-founder/caretaker, SC Pillai, the only son of CS
+              Pillai, grew up watching his father's passion for innovation, his
+              "Benjamin Franklin time-table," and all his innovation management
+              techniques. After obtaining an engineering degree in 1989, he
+              started his career as a professor of mechanical engineering.
+              Still, his father's dream soon caught up to him, and in 2003, he
+              started his first private limited firm, RF and Telecom company, by
+              partnering with IIT-BOMBAY, INDIA. Since then, he has become a
+              serial entrepreneur/founder, starting and exiting from over five
+              companies before starting csPILLAI (Surie Innovations Pvt. Ltd.)
+              in 2017. His only goal in life is to generate lots of work
+              required for human wellbeing and see his father's passion, "Human
+              welfare through value innovations," come true.
+            </p>
+            <img src="/assests/Images/history/report.png" alt="" />
+          </div>
+          <div class="row2 y2020">
+            <img src="/assests/Images/history/rocket.png" alt="" />
+
+            <p class="section_desc desc1">
+              <span class="year">2020</span>
+              COMPANY: csPILLAI [pronounced ‘see-yes-pill-eye’] Legal/Trade
+              name: Surie Innovations(OPC) Private Limited GSTIN:
+              27AAZCS6493B1ZO PAN No.: AAZCS6493B CIN No.: U73100MH2017OPC30339
+              D.O.Incorp: 28-12-2017
+            </p>
+          </div>
+        </div>
+      </section>
+      <div id="teams" class="history section-padding mar-bottom-3">
+        <header>
+          <div>
+            <h1 class="section_header">HISTORY</h1>
+          </div>
+        </header>
+
+        <div class="history-main-def">
+          <p>
+            FIFTY-NINE-YEAR-OLD STORY - A vision for earning and doing 'good' at
+            the same time!
+          </p>
+        </div>
+
+        <div>
+          <ul class="history-li">
+            <div class="line"></div>
+
+            <li>
+              <div class="history-icon">
+                <img src="assests/Images/history/bulb.png" />
+              </div>
+
+              <div class="history-elem">
+                <p>
+                  <span class="year">1960</span>
+                  Our vision to help build viable business lines accommodating
+                  both carbon neutrality and human wellbeing was envisaged in
+                  1959 by the co-founder’s father, CS Pillai, then aged 19.
+                  During this time, in CS Pillai's neighborhood, respiratory
+                  infections caused by indoor smoke pollution from wood stoves
+                  rose. His first invention, spurred by enthusiasm, was
+                  primarily to promote the community's quality of life.
+                  Involuntarily, it resulted in an invention and technology
+                  transfer. He did build the invention and bartered the
+                  IP-rights with a local businessman in exchange for the
+                  much-needed sheet metal tools required to produce the first
+                  pilot lot. These stoves, a low-cost innovation, reduced indoor
+                  smoke pollution considerably due to their high thermal
+                  efficiency. He didn’t stop there; he produced liquid wood gas
+                  through pyrolysis by incinerating agricultural waste using
+                  solar concentrators. The use of liquid wood gas further
+                  mitigated indoor smoke pollution significantly. He also
+                  developed a fully mechanical and wholly gravity-aided dead
+                  weight tracking mechanism required for solar concentrators for
+                  liquid wood gas production.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="history-icon">
+                <img src="assests/Images/history/brain.png" loading="lazy" />
+              </div>
+
+              <div class="history-elem">
+                <p>
+                  <span class="year">1980</span>
+                  He loved locomotives and hence served the Indian Railways
+                  passionately. Before his untimely demise in 1996, he innovated
+                  over 30 technologies in his free time. His inventor logbook
+                  presented various techniques related to sheet metal dies, wood
+                  bending fixtures, food vending mechanisms, motor winding
+                  tooling, barbed-wire auto-fencing equipment, underwater
+                  welding jigs, Stirling engines, and more. His last -- and
+                  unfinished -- innovation was a low-cost torque converter for
+                  mini diesel locomotive engines used in sugar mills. At the
+                  time of his death, he was a passenger train loco pilot/driver;
+                  he always dreamt of starting an 'innovation-driven venture(s)
+                  building company' after his retirement in 2000.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="history-icon">
+                <img src="assests/Images/history/report.png" loading="lazy" />
+              </div>
+
+              <div class="history-elem">
+                <p>
+                  <span class="year">2018</span>
+                  The visionary co-founder, the caretaker, SC Pillai (the only
+                  son of CS Pillai), grew up watching his father's passion for
+                  innovation, his "Benjamin Franklin time-table," and his
+                  innovation management techniques. After obtaining an
+                  engineering degree in 1989, he started his career as a faculty
+                  of mechanical engineering. Still, his father's dream soon
+                  caught up to him, and in 2003, he started a private limited
+                  firm, RF and Telecom company, by partnering with IIT-BOMBAY,
+                  INDIA. Since then, he has become a serial entrepreneur/founder
+                  starting and exiting with gains from over five companies
+                  before starting csPILLAI (Surie Innovations Pvt. Ltd.) in
+                  2017. His biggest goal in life is to generate the massive
+                  amounts of work required for human wellbeing and see his
+                  father's passion, "Human welfare through value innovations,"
+                  come true.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="history-icon">
+                <img src="assests/Images/history/rocket.png" loading="lazy" />
+              </div>
+
+              <div class="history-elem">
+                <p>
+                  <span class="year">2020</span>
+                  COMPANY: <b>csPILLAI</b> [pronounced 'see-yes-pill-eye']
+                  <br />
+
+                  Legal/Trade name:
+
+                  <b>Surie Innovations(OPC) Private Limited</b>
+
+                  <br />
+
+                  GSTIN: 27AAZCS6493B1Z0 <br />
+
+                  PAN No.: AAZCS6493B <br />
+
+                  CIN No.: U73100MH2017OPC30339 <br />
+
+                  D.O. Incorp: 28-12-2017
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="section-padding team mar-bottom-3">
+        <div class="team_parent">
+          <p class="section_header txt_green">FOUNDING TEAM</p>
+
+          <p class="section_desc" style="max-width: 80%">
+            Here is the Founding-team: the directors, founders, and promoters
+            who govern the company's affairs on a day-to-day basis.
+          </p>
+        </div>
+        <div class="team_img_parent">
+          <div class="team_card">
+            <img src="/assests/Images/team/SURESHBABU_final.png" alt="" />
+            <div class="team_name"><p>SURESHBABU</p></div>
+            <div class="team_position"><p>CO-FOUNDER + Visionary</p></div>
+          </div>
+          <div class="team_card">
+            <img src="/assests/Images/team/SHAUN DELIVERY.jpg" alt="" />
+            <div class="team_name"><p>SHAUN</p></div>
+            <div class="team_position"><p>CO-FOUNDER + Product Person</p></div>
+          </div>
+          <div class="team_card">
+            <img
+              src="/assests/Images/team/MARGARET DELIVERY DARKER CLOTHES.jpg"
+              alt=""
+            />
+            <div class="team_name"><p>MARGARET</p></div>
+            <div class="team_position"><p>CO-FOUNDER + Facilitator</p></div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="company_skills section-padding mar-bottom-3"
+        id="company_skills"
+      >
+        <div class="company_skills_parent">
+          <p class="section_header txt_white mar-bottom-1">COMPANY SKILLS</p>
+
+          <p
+            class="section_desc_white txt_white mar-bottom-3"
+            style="max-width: 50%"
+          >
+            THE SKILLS THAT HELP US BUILD AND SERVICE PORTFOLIO
+            VENTURES/STARTUPS ARE:
+          </p>
+
+          <img
+            class="company_chart"
+            src="/assests/Images/report_chart.png"
+            alt=""
+          />
+
+          <div class="skill_bars">
+            <div class="skill_bar">
+              <div class="innovation">Innovation Management</div>
+
+              <span class="percent">100%</span>
+            </div>
+
+            <div class="skill_bar">
+              <div class="business">Business Management</div>
+
+              <span class="percent">80%</span>
+            </div>
+
+            <div class="skill_bar">
+              <div class="digital">Digital Marketing</div>
+
+              <span class="percent">70%</span>
+            </div>
+
+            <div class="skill_bar">
+              <div class="cloud">Cloud Commerce</div>
+
+              <span class="percent">65%</span>
+            </div>
+
+            <div class="skill_bar">
+              <div class="rnd">Research & Development</div>
+
+              <span class="percent">50%</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="clients section-padding mar-bottom-3" id="clients">
+        <p class="section_header txt_green mar-bottom-1">CLIENTS</p>
+
+        <p class="section_desc mar-bottom-1">
+          We win and keep our clients. This is our key client(investor)
+          relationship portfolio!
+        </p>
+
+        <div class="client_img">
+          <marquee class="row" behavior="scroll" direction="right"
+            ><img src="/assests/Images/clients/logo1.png" alt="" />
+            <img src="/assests/Images/clients/logo2.png" alt="" />
+            <img src="/assests/Images/clients/logo3.png" alt="" />
+            <img src="/assests/Images/clients/logo4.png" alt=""
+          /></marquee>
+        </div>
+      </section>
+      <section class="contact_us section-padding" id="contact_us">
+        <p class="section_header txt_green mar-bottom-1">CONTACT US</p>
+        <div class="contact_row">
+          <div class="form">
+            <p class="section_desc mar-bottom-2">
+              Have questions? Need specifics? Let's get this conversation
+              started [or] if you wish to report a concern, please submit your
+              query to us immediately.
+            </p>
+            <form action="" class="contact">
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="Email" />
+              <textarea rows="6" placeholder="Message"></textarea>
+              <button class="accent_button">Submit</button>
+            </form>
+          </div>
+          <div class="map">
+            <p class="section_desc mar-bottom-2">
+              WE ARE LOCATED AT csPILLAI [ SI PVT. LTD.] Sawala Apta Road,
+              Panvel, MUMBAI
+            </p>
+            <div id="mapid" style="height: 20rem"></div>
+
+            <script>
+              center = [18.934915, 73.145878];
+
+              var mymap = L.map("mapid").setView(center, 13);
+
+              L.tileLayer(
+                "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}",
+
+                {
+                  attribution:
+                    'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+
+                  maxZoom: 18,
+
+                  id: "mapbox/streets-v11",
+
+                  tileSize: 512,
+
+                  zoomOffset: -1,
+
+                  accessToken:
+                    "pk.eyJ1Ijoia2l0ZXJldHN1IiwiYSI6ImNqc216MTExNzA2NDE0OW80bWhyNmwyMmoifQ.v7pnFYhTlfA59e_sMBMSBA",
+                }
+              ).addTo(mymap);
+
+              var marker = L.marker(center).addTo(mymap);
+
+              marker
+
+                .bindPopup(
+                  "<b>csPILLAI [SI PVT LTD]</b> <br> Sawala Apta Road, Panvel, Mumbai "
+                )
+
+                .openPopup();
+            </script>
+
+            <script src="js/testimonial.js"></script>
+          </div>
+        </div>
+      </section>
+      <section class="footer section-padding" id="footer">
+        <div class="footer_top_end mar-top-2">
+          <div class="f_column_1">
+            <img src="/assests/Images/logo/navlogo.png" alt="" />
+            <p>
+              “Presenting 'preemptive - (pre)seed round opportunities' for
+              beginning investors! Put down a small amount of capital in
+              exchange for significant equity and engage us in, to co-own
+              brand-new ventures and gain 2x to 10x profit upon exiting within
+              540 days!”
+            </p>
+            <butto class="accent_button">Invest-Exit-Gain</butto>
+            <p>
+              Ventures Mean Small Tech Startups and Small-Businesses. INVEST IN
+              VENTURE BUILDING NOW, BENEFIT ON SUCCESSFUL EXITS LATER!
+            </p>
+          </div>
+          <div class="box">
+            <div class="f_parent">
+              <div class="f_column_2">
+                <div class="f_c_header"><p>Schemes</p></div>
+                <p>Gooty-CI</p>
+                <p>Gooty-SS</p>
+                <p>Gooty-SB</p>
+                <p>Gootycart</p>
+              </div>
+              <div class="f_column_2">
+                <div class="f_c_header"><p>Support</p></div>
+                <p>Contact Us</p>
+                <p>Help & FAQ</p>
+              </div>
+            </div>
+
+            <div class="f_parent">
+              <div class="f_column_2">
+                <div class="f_c_header"><p>Contacts</p></div>
+                <p>contact@pillais.group</p>
+                <p>mail@cspillai.com</p>
+                <p>1800 212 4503</p>
+                <p>+91 8850762306</p>
+                <div class="social_media">
+                  <img
+                    class="social_logo"
+                    src="/assests/Images/logo/facebook.png"
+                    alt=""
+                  />
+                  <img
+                    class="social_logo"
+                    src="/assests/Images/logo/insta.png"
+                    alt=""
+                  />
+                  <img
+                    class="social_logo"
+                    src="/assests/Images/logo/linkedin.png"
+                    alt=""
+                  />
+                  <img
+                    class="social_logo"
+                    src="/assests/Images/logo/twitter.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="f_column_2">
+                <div class="f_c_header"><p>Legal</p></div>
+                <a href="earning.html">Earnings Disclaimer</a>
+                <a href="copyright.html">Copyright Notice</a>
+                <a href="termOfservice.html">Terms Of Service</a>
+                <a href="termOfuse.html">Terms Of Use</a>
+                <a href="privacy.html">Privacy Policy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom_end">
+          <p class="section_header txt_green txt_center">
+            What We Are & <br />What We Are Not
+          </p>
+
+          <div class="we_are_info">
+            <p class="we_bold">What We Are---></p>
+            <p>
+              Venture-Builder or Startup Factory, Inventor, Innovator,
+              Manufacturer, Aggregator
+            </p>
+            <p class="we_bold">What We Are Not---></p>
+            <p>Incubator, Accelerator, Angel investor, VC or CVC firm</p>
+            <p class="we_bold">Who is our No. 1 Client/Customer---></p>
+            <p>Pre-seed(beginning) Investor</p>
+            <p class="we_bold">What Problem We Solve---></p>
+            <p>
+              "We didn't see a one-stop source to walk beginners through startup
+              investing step by step and industrializing venture building
+              inexpensively and quickly. So we went out and made it."
+            </p>
+          </div>
+        </div>
+        <a
+          class="accent_button associates mar-bottom-2"
+          href="foundingTeam.html"
+          >Associates</a
+        >
+        <div class="end">
+          <p>
+            Ⓒ 2020 csPILLAI [ Surie Innovations (OPC) Pvt. Ltd.] trademarks and
+            brands are the property of their respective owners. INDIA
+          </p>
+        </div>
+      </section>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.height = "100vh";
+      }
+
+      /* Close when someone clicks on the "x" symbol inside the overlay */
+
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
+    </script>
+    <!--carousel-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".carousel-slider");
+
+        var instances = M.Carousel.init(elems, {
+          fullWidth: true,
+
+          indicators: true,
+        });
+
+        setInterval(function () {
+          instances.forEach((element) => {
+            if (!element.pressed && !element.dragged) {
+              element.next();
+            }
+          });
+        }, 5500);
+      });
+    </script>
+    <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+
+        var moreText = document.getElementById("more");
+
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+
+          btnText.innerHTML = "Read more";
+
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+
+          btnText.innerHTML = "Read less";
+
+          moreText.style.display = "inline";
+        }
+      }
+    </script>
+  </body>
+</html>

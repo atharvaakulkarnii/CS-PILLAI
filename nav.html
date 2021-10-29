@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Expanding SideNav</title>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Awesome-->
+
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <style>
+      .indicator {
+        background-color: green !important;
+      }
+    </style>
+    <!--Stylesheet-->
+  </head>
+  <body>
+    <div class="container">
+      <ul class="carousel carousel-slider">
+        <li class="carousel-item">
+          <div class="gooty_card_mob">
+            <div id="own_startup-ci" style="text-align: center">
+              <img
+                src="assests/Images/gootycart/gootyCI.png"
+                alt="Gooty-CI"
+                loading="lazy"
+                style="height: 150px; margin: 1rem 0"
+              />
+            </div>
+
+            <div class="gooty_desc_p">
+              <p>⭕ Opportunity: Pre-seed Round</p>
+
+              <p>⭕ You Offer: &lt;$55K</p>
+
+              <p>
+                ⭕ We Offer: <br />
+                50% or 68% equity
+              </p>
+
+              <p>
+                ⭕ Early Exit: <br />
+                &lt;540 days
+              </p>
+
+              <p>
+                ⭕ ROI on Exit: <br />
+                2x to 10x
+              </p>
+
+              <p style="white-space: nowrap">
+                ⭕ Startup: <br />
+                Corporate-Innovations
+              </p>
+
+              <p style="white-space: nowrap">
+                ⭕ IP rights/secrets/exclusivity
+              </p>
+
+              <p style="white-space: nowrap">⭕ Incorporation/web presence</p>
+
+              <p>⭕ Proto/Business Model Innovation</p>
+
+              <p>⭕ Client Portal</p>
+
+              <p>⭕ Venture buzz creation</p>
+
+              <p>⭕ 100% buyer buy-in</p>
+            </div>
+          </div>
+          <button>Get started</button>
+        </li>
+        <li class="carousel-item">
+          <div class="gooty_card_mob">
+            <div id="own_startup-ci" style="text-align: center">
+              <img
+                src="assests/Images/gootycart/gootyCI.png"
+                alt="Gooty-CI"
+                loading="lazy"
+                style="height: 150px; margin: 1rem 0"
+              />
+            </div>
+
+            <div class="gooty_desc_p">
+              <p>⭕ Opportunity: Pre-seed Round</p>
+
+              <p>⭕ You Offer: &lt;$55K</p>
+
+              <p>
+                ⭕ We Offer: <br />
+                50% or 68% equity
+              </p>
+
+              <p>
+                ⭕ Early Exit: <br />
+                &lt;540 days
+              </p>
+
+              <p>
+                ⭕ ROI on Exit: <br />
+                2x to 10x
+              </p>
+
+              <p style="white-space: nowrap">
+                ⭕ Startup: <br />
+                Corporate-Innovations
+              </p>
+
+              <p style="white-space: nowrap">
+                ⭕ IP rights/secrets/exclusivity
+              </p>
+
+              <p style="white-space: nowrap">⭕ Incorporation/web presence</p>
+
+              <p>⭕ Proto/Business Model Innovation</p>
+
+              <p>⭕ Client Portal</p>
+
+              <p>⭕ Venture buzz creation</p>
+
+              <p>⭕ 100% buyer buy-in</p>
+            </div>
+            <button>Get started</button>
+          </div>
+        </li>
+        <li class="carousel-item">
+          <div class="gooty_card_mob">
+            <div id="own_startup-ci" style="text-align: center">
+              <img
+                src="assests/Images/gootycart/gootyCI.png"
+                alt="Gooty-CI"
+                loading="lazy"
+                style="height: 150px; margin: 1rem 0"
+              />
+            </div>
+
+            <div class="gooty_desc_p">
+              <p>⭕ Opportunity: Pre-seed Round</p>
+
+              <p>⭕ You Offer: &lt;$55K</p>
+
+              <p>
+                ⭕ We Offer: <br />
+                50% or 68% equity
+              </p>
+
+              <p>
+                ⭕ Early Exit: <br />
+                &lt;540 days
+              </p>
+
+              <p>
+                ⭕ ROI on Exit: <br />
+                2x to 10x
+              </p>
+
+              <p style="white-space: nowrap">
+                ⭕ Startup: <br />
+                Corporate-Innovations
+              </p>
+
+              <p style="white-space: nowrap">
+                ⭕ IP rights/secrets/exclusivity
+              </p>
+
+              <p style="white-space: nowrap">⭕ Incorporation/web presence</p>
+
+              <p>⭕ Proto/Business Model Innovation</p>
+
+              <p>⭕ Client Portal</p>
+
+              <p>⭕ Venture buzz creation</p>
+
+              <p>⭕ 100% buyer buy-in</p>
+            </div>
+            <button>Get started</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".carousel-slider");
+
+        var instances = M.Carousel.init(elems, {
+          fullWidth: true,
+
+          indicators: true,
+        });
+
+        setInterval(function () {
+          instances.forEach((element) => {
+            if (!element.pressed && !element.dragged) {
+              element.next();
+            }
+          });
+        }, 5500);
+      });
+    </script>
+  </body>
+</html>
